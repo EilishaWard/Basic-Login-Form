@@ -30,8 +30,9 @@ namespace Basic_Login
             {
                 iAttempt = 0;
                 MessageBox.Show("Login granted");
-                this.Close();
-
+                //this.Close();
+                Admin admin = new Admin();
+                admin.ShowDialog();
             }
             else if(iAttempt < 3)
             {
